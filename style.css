@@ -1,0 +1,18 @@
+body{
+    background-image: url(assets/bg.jpg);
+    background-size: cover; /*cobre toda a area visivel  */
+}
+
+.container{
+    box-sizing: border-boxzing; /*espreme o conteúdo para que o padding e a borda caibam dentro da largura(width) */
+    width: 800px;
+    padding: 24px;
+    background-color: #F0E8C2;
+    border-radius: 24px;
+    margin: auto;
+}
+
+.image{
+    border-radius: 16px;
+    
+}

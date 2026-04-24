@@ -3,23 +3,33 @@
     padding: 0%;
 }
 
+:root{  /*define estilos globais*/
+    font-family: "Alice", serif;
+    line-height: 150%;
+}
+
 body{
     background-image: url(assets/bg.jpg);
     background-size: cover; /*cobre toda a area visivel  */
+    box-sizing: border-box; /*espreme o conteúdo para que o padding e a borda caibam dentro da largura(width) */
+    
 }
 
 .container{
-    box-sizing: border-boxzing; /*espreme o conteúdo para que o padding e a borda caibam dentro da largura(width) */
     width: 800px;
     padding: 24px;
     background-color: #F0E8C2;
     border-radius: 24px;
-    margin: auto;
+    margin: 48px auto 28px; /*cima, direita, baixo, esquerda (ordem dos valores)*/
 }
 
 .image{
     border-radius: 16px;
     
+}
+
+#about ul{
+    list-style: none;
 }
 
 main{
@@ -28,49 +38,36 @@ main{
     padding: 24px ;
 }
 
-#about h1{
-    margin-bottom: 4px;
-}
-
-#about p{
-    margin-bottom: 12px;
-}
-
-#ingredientes{
-    margin:  24px 0px 24px 0px
-}
-
-#ingredientes h2{
-    margin-bottom: 4px;
-}
-
-#about ul li{
-    list-style: none;
-    padding: 0px 12px 0px 0px;
-}
-
-.alice-regular {
-  font-family: "Alice", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-p{
-    font-family: "Alice", serif;
-    font-weight: 400;
-    font-size: 16px;
+section + section{ /*estilo será aplicado a toda e qualquer tag que venha imediatamente após outra tag igual*/
+    margin-top: 24px;
 }
 
 h1{
-    font-family: "Alice", serif;
-    font-weight: 400;
+    line-height: 140%;
+    font-size: 40px;
 }
 
-h2 {
-    font-family: "Alice", serif;
-    font-weight: 400;
+h2{
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+h1 , h2{
+    color: #291B1A;
+    line-height: 150%;
+}
+
+p{
+    color: #573A37;
+    margin-bottom: 12px;
+}
+
+#ingredientes ul{
+    padding-left: 24px;
 }
 
 footer{
-    padding: auto;
+    color: #F0E8C2;
+    text-align: center;
+    padding: 48px;
 }
